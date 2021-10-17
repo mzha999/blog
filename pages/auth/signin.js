@@ -6,8 +6,8 @@ const signIn = ({ providers }) => {
     <>
       <Header />
       <div className="flex flex-col items-center justify-center min-h-screen py-2 -mt-56 text-center">
-        <img className="w-80" src="https://links.papareact.com/ocw" alt="" />
-        <p className="font-xs italic">This is not a REAL app, it is built for educatonal purposes only.</p>
+        <img className="w-80" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHUvOd8Q-VihyupbJCdgjIR2FxnjGtAgMu3g&usqp=CAU" alt="" />
+        <p className="font-xs italic">This is not a REAL app, it is built for personal use only.</p>
         <div className="mt-40">
           {Object.values(providers).map((provider) => (
             <div key={provider.name}>
