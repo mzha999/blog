@@ -7,7 +7,7 @@ const MiniProfile = () => {
       <img
         src={session?.user?.image} //"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHUvOd8Q-VihyupbJCdgjIR2FxnjGtAgMu3g&usqp=CAU"
         alt=""
-        className="round-full border p-[2px] w-16 h-16"
+        className="rounded-full border p-[2px] w-16 h-16"
       />
 
       <div className="flex-1 mx-4">
