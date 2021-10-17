@@ -11,10 +11,14 @@ import {
 } from "@heroicons/react/outline";
 import { signIn, signOut, useSession } from "next-auth/react";
 import { useRouter } from "next/router";
+import { modalState } from "../atoms/modalAtom";
+import { useRecoilState } from "recoil";
 
 const Header = () => {
   const { data: session } = useSession();
   const router = useRouter();
+  const [open, setOpen] = useRecoilState(modalState);
+  //const open = useRecoilValue(modalState);
   return (
     <div className="shadow-sm border-b bg-white sticky top-0 z-20">
       <div className="flex justify-between max-w-6xl mx-5 lg:mx-auto">
@@ -62,7 +66,10 @@ const Header = () => {
                 </div>
               </div>
 
-              <PlusCircleIcon className="navBtn" />
+              <PlusCircleIcon
+                className="navBtn"
+                onClick={() => setOpen(true)}
+              />
               <UserGroupIcon className="navBtn" />
               <HeartIcon className="navBtn" />
               <img
