@@ -26,11 +26,6 @@ const Header = () => {
           className="relative hidden lg:inline-grid  w-24 cursor-pointer"
           onClick={() => router.push("/")}
         >
-          {/* <Image
-            src="https://links.papareact.com/ocw"
-            layout="fill"
-            objectFit="contain"
-          /> */}
           <p className="font-bold  m-3 flex flex-nowrap">𝕶𝖊𝖓𝖓𝖞'𝖘 𝕭𝖑𝖔𝖌</p>
         </div>
         <div
